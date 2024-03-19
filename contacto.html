@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(126, 248, 126); /* Cambia el color de fondo a verde */
+            font-size: 20px; /* Aumenta el tamaño de la fuente del texto */
+        }
+
+        label {
+            font-size: 30px; /* Tamaño de fuente igual al del body */
+        }
+
+        input[type="text"], input[type="submit"] {
+            font-size: 20px; /* Tamaño de fuente igual al del body */
+            width: auto; /* Para que el ancho se ajuste automáticamente al contenido */
+        }
+        nav a {
+            font-size: 30px; 
+            text-decoration: none; /* Para quitar el subrayado predeterminado */
+              }  
+    </style>
 </head>
 <body>
-    
+    <nav>   
+        <a href="index.html">Volver al Inicio</a>
+    </nav> 
+    <h1>Contáctanos</h1>
+    <label for="firstname">Nombre</label>
+    <input type="text" name="firstname" id="firstname">
+    <input type="submit" value="Enviar datos">
 </body>
 </html>
