@@ -13,9 +13,12 @@
         label {
             font-size: 30px; /* Tamaño de fuente igual al del body */
         }
+        button {
+            font-size: 30px; /* Tamaño de fuente igual al del body */
+        }
 
         input[type="text"], input[type="submit"] {
-            font-size: 20px; /* Tamaño de fuente igual al del body */
+            font-size: 30px; /* Tamaño de fuente igual al del body */
             width: auto; /* Para que el ancho se ajuste automáticamente al contenido */
         }
         nav a {
@@ -29,8 +32,15 @@
         <a href="index.html">Volver al Inicio</a>
     </nav> 
     <h1>Contáctanos</h1>
-    <label for="firstname">Nombre</label>
-    <input type="text" name="firstname" id="firstname">
-    <input type="submit" value="Enviar datos">
-</body>
+
+    <form action="#" method="get">
+    
+    <label for="nombre"><b>Nombre:</b></label>
+    <input type="text" id="nombre"> 
+<br></br>
+    <label for="apellido"><b>Apellido:</b></label>
+    <input type="text" id="apellido">
+    <br></br>
+    <button>Enviar</button>
+</form>
 </html>
