@@ -45,6 +45,7 @@ nav ul li a {
 
 .section:hover {
     transform: scale(1.05);
+    background-image: url(./assets/Imagenes/fondos/fondoHamburguesa.jpg);
 }
 
 footer {
