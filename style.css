@@ -6,7 +6,9 @@ body, h1, h2, p, ul, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(./assets/Imagenes/fondos/fondo_reunion_amigos.jpg);
+    background-image: url(./assets/Imagenes/fondos/fondo2.png);
+    background-size: cover;
+    color:goldenrod;
     }
 
 /* Estilos generales */
@@ -46,7 +48,6 @@ nav ul li a {
 
 .section:hover {
     transform: scale(1.05);
-    background-image: url(./assets/Imagenes/fondos/fondoHamburguesa.jpg);
     color: white;
 }
 
