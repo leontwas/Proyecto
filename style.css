@@ -7,27 +7,28 @@ body, h1, h2, p, ul, li {
     body {
         font-family: Arial, sans-serif;
         background-image: url(./assets/Imagenes/fondos/fondoMax.png);
-        background-size: cover; /* Utiliza cover en lugar de contain para ajustar la imagen de fondo */
+        background-size: cover;
         color: goldenrod;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+        overflow-x: hidden;
     }
 }
 
-@media only screen and (min-width: 850px) {
-body {
-    font-family: Arial, sans-serif;
-    background-image: url(./assets/Imagenes/fondos/fondo2.png);
-    background-size: cover; /* Utiliza cover en lugar de contain para ajustar la imagen de fondo */
-    color: goldenrod;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+@media only screen and (min-width: 851px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(./assets/Imagenes/fondos/fondo2.png);
+        background-size: cover;
+        color: goldenrod;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
 }
 
 .bungee-regularspice- {
@@ -36,7 +37,6 @@ body {
     font-style: normal;
 }
 
-/* Estilos generales */
 header {
     background-color: rgba(100, 52, 72, 0.8);
     text-align: center;
@@ -69,13 +69,9 @@ nav ul li a {
     margin-top: 10px;
     margin-left: 50px;
     margin-bottom: 5px;
-    background-color: rgb(57, 11, 100, 50);
+    background-color: rgba(57, 11, 100, 0.5);
     border-radius: 10%;
-}
-
-/* Animaciones de transición */
-.section {
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; /* Mueve esta línea fuera del selector */
 }
 
 .section:hover {
