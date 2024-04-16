@@ -26,6 +26,7 @@ header {
     background-color: rgba(100, 52, 72, 0.8); /* Fondo semitransparente */
     text-align: center;
     width: 100%; /* Ancho al 100 */
+    padding: 0.5cm;
 }
 
 header h1 {
