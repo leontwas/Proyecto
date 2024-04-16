@@ -3,10 +3,10 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1000px) {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
+        background-image: url(./assets/Imagenes/fondos/fondoMed.png);
         background-size: cover;
         color: goldenrod;
         background-attachment: fixed;
@@ -17,10 +17,10 @@ body, h1, h2, p, ul, li {
     }
 }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (max-width: 650px) {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/fondo2.png);
+        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
         background-size: cover;
         color: goldenrod;
         background-attachment: fixed;
@@ -71,7 +71,7 @@ nav ul li a {
     margin-bottom: 5px;
     background-color: rgba(57, 11, 100, 0.5);
     border-radius: 10%;
-    transition: transform 0.5s ease-in-out; /* Mueve esta línea fuera del selector */
+    transition: transform 0.5s ease-in-out;
 }
 
 .section:hover {
