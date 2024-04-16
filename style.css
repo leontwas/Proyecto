@@ -3,10 +3,10 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 650px) {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/fondoMed.png);
+        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
         background-size: cover;
         color: goldenrod;
         background-attachment: fixed;
@@ -17,10 +17,10 @@ body, h1, h2, p, ul, li {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 600px) {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
+        background-image: url(./assets/Imagenes/fondos/fondoMed.png);
         background-size: cover;
         color: goldenrod;
         background-attachment: fixed;
