@@ -3,6 +3,21 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
+@media only screen and (max-width: 650px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
+        background-size: cover; /* Utiliza cover en lugar de contain para ajustar la imagen de fondo */
+        color: goldenrod;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    }
+}
+
+@media only screen and (min-width: 850px) {
 body {
     font-family: Arial, sans-serif;
     background-image: url(./assets/Imagenes/fondos/fondo2.png);
