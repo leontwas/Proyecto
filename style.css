@@ -42,7 +42,7 @@ body, h1, h2, p, ul, li {
 @media only screen and (min-width: 651px) and (max-width: 1200px)  {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/fondoMed.png);
+        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
         background-size: cover;
         color: rgb(8, 201, 250);
         background-attachment: fixed;
@@ -56,7 +56,7 @@ body, h1, h2, p, ul, li {
 @media only screen and (min-width: 1201px)  {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
+        background-image: url(./assets/Imagenes/fondos/fondoMed.png);
         background-size: cover;
         color: rgb(8, 201, 250);
         background-attachment: fixed;
