@@ -2,31 +2,34 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
-/* Mobile First */
+/* Celulares */
 @media only screen and (max-width: 650px) {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/enFlamas.jpg);
+        background-image: url(./assets/Imagenes/fondos/burguerSmall.jpg);
         background-size: cover;
-        color: rgb(198, 212, 8);
+        color: gold;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
     }
+    
+    /* Títulos del menú */
     .section {
         font-size:xx-small;
         padding: 10px 10px;
         width: 20vW;
-        min-width: 40vw;
+        min-width: 50vw;
         max-width:min-content;
         text-align: center;
+        color:gold;
         margin-top: 10px;
         margin-left: 10px;
         margin-bottom: 5px;
-        background-color: rgba(132, 4, 136, 0.4);
-        border-radius: 10%;
+        background-color: rgba(82, 125, 173, 0.4);
+        border-radius: 40%;
         transition: transform 0.5s ease-in-out;
     }
     .section1 {
@@ -34,17 +37,31 @@ body, h1, h2, p, ul, li {
         margin-left: 10px;
         text-align: center;
     }
+/* Título Qué te gustaría? */
+    .section2 {
+        font-size:large;
+        color:gold;
+        padding: 10px 10px;
+        width: 50vW;
+        min-width: 65vw;
+        max-width:min-content;
+        text-align: center;
+        margin-top: -5px;
+        margin-left: -65px;
+        margin-bottom: -15px;
+    }
+
     .section:hover {
         transform: scale(1.05);
         color: white;
-        background-color: rgba(132, 4, 136); 
+        background-color:rgba(82, 125, 173);
     }  
 }
-/* Table Second */
-@media only screen and (min-width: 651px) and (max-width: 1200px)  {
+/* Tablets */
+@media only screen and (min-width: 651px) and (max-width: 1000px)  {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/fondoMed.png);
+        background-image: url(./assets/Imagenes/fondos/burguerMed.jpg);
         background-size: cover;
         color: rgb(198, 212, 8);
         background-attachment: fixed;
@@ -53,10 +70,6 @@ body, h1, h2, p, ul, li {
         min-height: 100vh;
         overflow-x: hidden;  
     }
-  /*  .pedido {
-        background-color: antiquewhite;
-        width: 65vw;
-    }*/
     .section {
         font-size:medium;
         padding: 10px 10px;
@@ -75,6 +88,23 @@ body, h1, h2, p, ul, li {
         margin-top: -10px;
         margin-left: 10px;
         text-align: center;
+        font-size:large;
+    }
+
+    .section2 {
+        font-size:x-large;
+        padding: 10px 10px;
+        width: 50vW;
+        min-width: 65vw;
+        max-width:min-content;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .chicle-regular {
+        color: black;
     }
     .section:hover {
         transform: scale(1.05);
@@ -82,35 +112,77 @@ body, h1, h2, p, ul, li {
         background-color: rgba(132, 4, 136); 
     }  
 }
-
-@media only screen and (min-width: 1201px)  {
+/* Notebooks */
+@media only screen and (min-width: 1001px)  {
     body {
         font-family: Arial, sans-serif;
         background-image: url(./assets/Imagenes/fondos/fondoMax.png);
         background-size: cover;
-        color: rgb(8, 201, 250);
+        color: rgb(10, 10, 10);
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
     } 
+    .section {
+        font-size:medium;
+        padding: 10px 10px;
+        width: 10vW;
+        min-width: 65vw;
+        max-width:min-content;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        background-color: rgba(58, 52, 58, 0.4);
+        border-radius: 10%;
+        border-bottom-style:dotted;
+        transition: transform 0.5s ease-in-out;
+    }
+    .section1 {
+        margin-top: -10px;
+        margin-left: 10px;
+        text-align: center;
+        font-size:x-large;
+    }
+
+    .section2 {
+        font-size:xx-large;
+        width: 50vW;
+        min-width: 65vw;
+        max-width:min-content;
+        text-align: center;
+    }
+
+    .section:hover {
+        transform: scale(1.05);
+        color: white;
+        background-color: rgba(132, 4, 136); 
+    }  
+    .kalam-regular {
+        color:rgb(248, 252, 6);
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        background-color: rgba(58, 52, 58, 0.4);
+        border-radius: 10%;
+    }
 }
 
+/* Fuentes */
   .kalam-regular {
     font-family: "Kalam", cursive;
     font-weight: 400;
     font-style: normal;
     margin-left: 20px;
-    color:white;
-
   }
-  
+
   .kalam-bold {
     font-family: "Kalam", cursive;
     font-weight: 700;
     font-style: normal;
-  }    
+  }  
 
 .bungee-regularspice- {
     font-family: "Bungee Spice", sans-serif;
@@ -118,10 +190,19 @@ body, h1, h2, p, ul, li {
     font-style: normal;
 }
 
+.chicle-regular {
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 header {
-    background-color: rgba(100, 52, 72, 0.8);
+    background-color: rgba(97, 3, 42);
     text-align: center;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -130,32 +211,37 @@ header h1 {
 
 nav ul {
     list-style-type: none;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
 
+/* Display del footer */
 .container {
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
+/* Texto del footer */
 .item {
 width: 30vW;
 font-size:smaller;
 padding: 5px;
 }
 
-
+/* Estilo del texto del footer */
 footer {
     background-color: #0f0f0f;
     color: #fff;
@@ -163,5 +249,4 @@ footer {
     width: 100%;
     padding: 0cm;
     margin-top: auto;
-
 }
