@@ -6,27 +6,30 @@ body, h1, h2, p, ul, li {
 @media only screen and (max-width: 650px) {
     body {
         font-family: Arial, sans-serif;
-        background-image: url(./assets/Imagenes/fondos/600x400.png);
+        background-image: url(./assets/Imagenes/fondos/burguerSmall.jpg);
         background-size: cover;
-        color: rgb(198, 212, 8);
+        color: gold;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
     }
+    
+    /* Títulos del menú */
     .section {
         font-size:xx-small;
         padding: 10px 10px;
         width: 20vW;
-        min-width: 40vw;
+        min-width: 50vw;
         max-width:min-content;
         text-align: center;
+        color:gold;
         margin-top: 10px;
         margin-left: 10px;
         margin-bottom: 5px;
-        background-color: rgba(132, 4, 136, 0.4);
-        border-radius: 10%;
+        background-color: rgba(82, 125, 173, 0.4);
+        border-radius: 40%;
         transition: transform 0.5s ease-in-out;
     }
     .section1 {
@@ -34,10 +37,24 @@ body, h1, h2, p, ul, li {
         margin-left: 10px;
         text-align: center;
     }
+/* Título Qué te gustaría? */
+    .section2 {
+        font-size:large;
+        color:gold;
+        padding: 10px 10px;
+        width: 50vW;
+        min-width: 65vw;
+        max-width:min-content;
+        text-align: center;
+        margin-top: -5px;
+        margin-left: -65px;
+        margin-bottom: -15px;
+    }
+
     .section:hover {
         transform: scale(1.05);
         color: white;
-        background-color: rgba(132, 4, 136); 
+        background-color:rgba(82, 125, 173);
     }  
 }
 /* Tablets */
@@ -180,11 +197,12 @@ body, h1, h2, p, ul, li {
   }
 
 header {
-    background-color: rgba(100, 52, 72, 0.8);
+    background-color: rgba(97, 3, 42);
     text-align: center;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -208,6 +226,7 @@ nav ul li a {
     padding: 10px;
 }
 
+/* Display del footer */
 .container {
     display: inline-flex;
     flex-wrap: wrap;
@@ -215,13 +234,14 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
+/* Texto del footer */
 .item {
 width: 30vW;
 font-size:smaller;
 padding: 5px;
 }
 
-
+/* Estilo del texto del footer */
 footer {
     background-color: #0f0f0f;
     color: #fff;
@@ -229,5 +249,4 @@ footer {
     width: 100%;
     padding: 0cm;
     margin-top: auto;
-
 }
