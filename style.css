@@ -63,7 +63,7 @@ body, h1, h2, p, ul, li {
 @media only screen and (min-width: 651px) and (max-width: 1000px)  {
     body {
         /* Títulos del nav */
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/burgerMedium.jpg);
         background-size: cover;
         color: gold;
