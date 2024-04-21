@@ -91,4 +91,8 @@ footer {
     padding: 0cm;
     margin-top: auto;
     font-size:medium;
+
+    .copyright {
+        color: white;
+    }
 }
