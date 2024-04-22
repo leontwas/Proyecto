@@ -1,36 +1,40 @@
-body, h1, h2, p, ul, li {
+/* Reset de estilos */
+body, h1, h2, p, ul, li, label, input, button {
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-image: url(./assets/Imagenes/fondos/reservaMax.png); 
-    font-size: 30px; 
-    color:chocolate;
- 
-    .kalam-regular {
-        color:rgb(248, 252, 6);
-        text-align: left;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        border-radius: 10%;
-    }
+    background-image: url(./assets/Imagenes/fondos/reservaMax.png);
+    font-size: 30px;
+    color: chocolate;
 }
 
-label, input[type="radio"] {
-    color: white;
-    font-size: 30px; /* Tamaño de fuente igual al del body */
+.kalam-regular {
+    color: rgb(248, 252, 6);
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10%;
 }
 
-button {
-    font-size: 30px; /* Tamaño de fuente igual al del body */
+label, input[type="radio"], button, input[type="text"], input[type="email"] {
+    font-size: 30px;
 }
 
 input[type="text"], input[type="email"] {
-    font-size: 30px; /* Tamaño de fuente igual al del body */
     width: auto; /* Para que el ancho se ajuste automáticamente al contenido */
 }
+
 input[type="radio"] {
     transform: scale(1.5); /* Aumenta el tamaño del radio button */
+}
+
+.bungee-regularspice- {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size:xx-large;
 }
 
 header {
@@ -48,27 +52,25 @@ header h1 {
 
 nav ul {
     list-style-type: none;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px;
-    font-size:large;
+    font-size: large;
 }
-nav a {
-    font-size: 30px;
-    text-decoration: none; /* Para quitar el subrayado predeterminado */
-}  
 
 /* Display del footer */
 .container {
+    color: white;
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: 5px;
@@ -77,22 +79,22 @@ nav a {
 
 /* Texto del footer */
 .item {
-    width: 30vW;
-    font-size:medium;
-    padding: 5px;
-    }
+width: 30vW;
+font-size:small;
+padding: 5px;
+color: white;
+}
 
 /* Estilo del texto del footer */
 footer {
     background-color: #0f0f0f;
-    color: #fff;
     text-align: center;
     width: 100%;
     padding: 0cm;
-    margin-top: auto;
-    font-size:medium;
+    margin-top: 50px;
 
     .copyright {
         color: white;
+        font-size:medium;
     }
 }
