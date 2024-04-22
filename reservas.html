@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css"> <!-- Cargo Bootstrap-->
     <link rel="stylesheet" type="text/css" href="stylesReserva.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Reserva</title>
 </head>
 <body>
@@ -20,31 +21,37 @@
             </ul>
         </nav>
     </header>
-    <section id="reserva" class="section2">
-        <p class="kalam-regular">Haz tu reserva</p>
+    <section id="seccionReserva" class="section1">
+        <p class="kalam-bold">Haz tu reserva</p>
     </section>
 
-    <div class="pedido">
+    <div class="reserva">
         <form action="#" method="get" name="formularioContacto">
-            <label for="nombre"><b>Nombre:</b></label>
+            <label for="nombre"><b>Nombre y apellido:</b></label>
             <input type="text" name="nombre" id="nombre"> 
             <br><br>
-            <label for="apellido"><b>Apellido:</b></label>
-            <input type="text" name="apellido" id="apellido">
+            <label for="telefono"><b>Teléfono de contacto:</b></label>
+            <input type="text" name="telefono" id="telefono">
             <br><br>
-            <label for="email"><b>e-mail:</b></label>
+            <label for="cantPers"><b>Cantidad de personas:</b></label>
+            <input type="text" name="cantPers" id="cantPers">
+            <br><br>
+            <label for="email"><b>Correo electrónico:</b></label>
             <input type="email" name="email" id="email"> 
             <br><br>
-            <b>Desea que lo contactemos?</b><input type="radio" name="rbcontactar" value="1"> 
+            <b>Entre las personas hay menores?</b><input type="radio" name="rbcontactar" value="1"> 
             <br><br>
-            <button>Enviar</button>
+            <button class="borrar">Limpiar</button> 
+            <button class="reservar">Reservar</button>
+            <button class="cancelar">Cancelar</button>
+            <button class="volver">Volver</button>
         </form>
     </div>
-    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/bootstrap.js"></script> <!-- Cargo JavaScript-->
 </body>
     <footer>
         <div class="container">
-            <div class="item item-1">Productos</div>
+            <div class="item item-1">Preguntas frecuentes</div>
             <div class="item item-2">Sucursales</div>
             <div class="item item-3">Quienes somos?</div>
             <div class="item item-4">Libro de quejas</div>
@@ -52,7 +59,7 @@
             <div class="item item-6">Novedades</div> 
             <div class="item item-7">Contacto</div>  
             <div class="item item-8">Servicios</div> 
-            <div class="item item-9">Políticas de pricacidad</div>    
+            <div class="item item-9">Políticas de privacidad</div>    
         </div>      
         <hr>
         <div class="copyright">&copy; 2024 Gloriosa Burguers. Todos los derechos reservados.</div>
