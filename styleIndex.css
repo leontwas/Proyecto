@@ -238,7 +238,6 @@ nav ul li a {
 
 /* Display del footer */
 .container {
-    color: white;
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: 5px;
@@ -250,12 +249,12 @@ nav ul li a {
 width: 30vW;
 font-size:smaller;
 padding: 5px;
-color: white;
 }
 
 /* Estilo del texto del footer */
 footer {
     background-color: #0f0f0f;
+    color: #fff;
     text-align: center;
     width: 100%;
     padding: 0cm;
