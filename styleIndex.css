@@ -259,4 +259,8 @@ footer {
     width: 100%;
     padding: 0cm;
     margin-top: auto;
+
+    .copyright {
+        color: white;
+    }
 }

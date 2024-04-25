@@ -1,7 +1,52 @@
-/* 
- *  Owl Carousel - Animate Plugin
- */
- .owl-carousel .animated {
+ body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.bungee-regularspice- {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+}
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}  
+
+header {
+  background-color: rgba(97, 3, 42);
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+ /* margin-bottom: 10px;*/
+}
+header h1 {
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+  .owl-carousel .animated {
     -webkit-animation-duration: 1000ms;
     animation-duration: 1000ms;
     -webkit-animation-fill-mode: both;
@@ -214,4 +259,34 @@
     position: relative;
     z-index: 1;
   }
-  
+
+/* Display del footer */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+
+/* Texto del footer */
+.item {
+  width: 33.33%; /* Ancho para tres columnas */
+  font-size: smaller;
+  padding: 5px;
+}
+
+/* Estilo del texto del footer */
+footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin-top: auto;
+}
+/* Estilo para el texto de derechos de autor */
+.copyright {
+  color: white;
+  border-top: 1px solid white;
+  margin-top: 20px;
+}
+
