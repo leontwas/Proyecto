@@ -28,19 +28,19 @@
     <div class="reserva">
         <form action="#" method="get" name="formularioContacto">
             <label for="nombre"><b>Nombre:</b></label>
-            <input type="text" name="nombre" id="nombre"> 
+            <input type="text" name="nombre" id="nombre" required > 
             <br><br>
             <label for="apellido"><b>Apellido:</b></label>
-            <input type="text" name="apellido" id="apellido"> 
+            <input type="text" name="apellido" id="apellido" required> 
             <br><br>
             <label for="telefono"><b>Teléfono:</b></label>
-            <input type="tel" name="telefono" id="telefono">
+            <input type="tel" name="telefono" id="telefono" required>
             <br><br>
             <label for="email"><b>Correo electrónico:</b></label>
-            <input type="email" name="email" id="email"> 
+            <input type="email" name="email" id="email" required> 
             <br><br>
             <label for="cantPers"><b>Cantidad de personas:</b></label>
-            <select name="cantPers" id="cantPers">
+            <select name="cantPers" id="cantPers" required>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -64,10 +64,9 @@
             </select>
             <br><br>
             <label class="menores" for="menores"><b>Entre las personas hay menores?: </b></label>
-            <input type="radio" name="rbMenor" value="1"> 
+            <input type="radio" name="rbMenor" value="1" required> 
             <br><br>
-            <!-- <input type="submit" value="Limpiar"> Esta es otra forma de poner un botón--> 
-            <input class="borrar" type="reset"></button> 
+            <input class="restablecer" type="reset"></button> 
             <button class="posponer">Posponer</button>
             <input class="enviar" type="submit"></button>
             <button class="salir">Salir</button>
