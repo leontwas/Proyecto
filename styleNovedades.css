@@ -4,9 +4,11 @@
 }
 
 .bungee-regularspice- {
+  margin-top: 5px;
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: xx-large;
 }
 
 .kalam-regular {
@@ -32,20 +34,29 @@ header {
 header h1 {
   color: white;
 }
+
 nav ul {
   list-style-type: none;
   margin-top: 5px;
 }
+
 nav ul li {
   display: inline;
   margin-right: 20px;
-
 }
+
 nav ul li a {
   text-decoration: none;
   color: white;
   padding: 10px;
+  font-size: large;
 }
+
+nav ul li a:hover {
+  color: blue; /* Cambia el color al pasar el mouse */
+  text-decoration:none;
+}
+
   .owl-carousel .animated {
     -webkit-animation-duration: 1000ms;
     animation-duration: 1000ms;

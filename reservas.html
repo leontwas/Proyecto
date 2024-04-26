@@ -22,33 +22,59 @@
         </nav>
     </header>
     <section id="seccionReserva" class="section1">
-        <p class="kalam-bold">Haz tu reserva</p>
+        <p class="kalam-bold">Hacé tu reserva aquí...</p>
     </section>
 
     <div class="reserva">
         <form action="#" method="get" name="formularioContacto">
-            <label for="nombre"><b>Nombre y apellido:</b></label>
+            <label for="nombre"><b>Nombre:</b></label>
             <input type="text" name="nombre" id="nombre"> 
             <br><br>
-            <label for="telefono"><b>Teléfono de contacto:</b></label>
-            <input type="text" name="telefono" id="telefono">
+            <label for="apellido"><b>Apellido:</b></label>
+            <input type="text" name="apellido" id="apellido"> 
             <br><br>
-            <label for="cantPers"><b>Cantidad de personas:</b></label>
-            <input type="text" name="cantPers" id="cantPers">
+            <label for="telefono"><b>Teléfono:</b></label>
+            <input type="tel" name="telefono" id="telefono">
             <br><br>
             <label for="email"><b>Correo electrónico:</b></label>
             <input type="email" name="email" id="email"> 
             <br><br>
-            <b>Entre las personas hay menores?</b><input type="radio" name="rbcontactar" value="1"> 
+            <label for="cantPers"><b>Cantidad de personas:</b></label>
+            <select name="cantPers" id="cantPers">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+            </select>
             <br><br>
-            <button class="borrar">Limpiar</button> 
-            <button class="reservar">Reservar</button>
-            <button class="cancelar">Cancelar</button>
-            <button class="volver">Volver</button>
+            <label class="menores" for="menores"><b>Entre las personas hay menores?: </b></label>
+            <input type="radio" name="rbMenor" value="1"> 
+            <br><br>
+            <!-- <input type="submit" value="Limpiar"> Esta es otra forma de poner un botón--> 
+            <input class="borrar" type="reset"></button> 
+            <button class="posponer">Posponer</button>
+            <input class="enviar" type="submit"></button>
+            <button class="salir">Salir</button>
         </form>
     </div>
     <script src="./assets/js/bootstrap.js"></script> <!-- Cargo JavaScript-->
-</body>
+
     <footer>
         <div class="container">
             <div class="item item-1">Preguntas frecuentes</div>
@@ -64,4 +90,5 @@
         <hr>
         <div class="copyright">&copy; 2024 Gloriosa Burgers. Todos los derechos reservados.</div>
     </footer>
+</body>
 </html>
