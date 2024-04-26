@@ -194,10 +194,11 @@ body, h1, h2, p, ul, li {
     font-style: normal;
   }  
 
-.bungee-regularspice- {
+  .bungee-regularspice- {
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style:normal;
+    font-size:xx-large;
 }
 
 .chicle-regular {
@@ -219,7 +220,7 @@ header h1 {
     color: white;
 }
 
-nav ul {
+/* nav ul {
     list-style-type: none;
     margin-top: 10px;
 }
@@ -234,6 +235,28 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px;
+}*/
+
+nav ul {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    transition: color 0.3s, text-decoration 0.3s;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: blue; /* Cambia el color al pasar el mouse */
 }
 
 /* Display del footer */
