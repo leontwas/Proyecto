@@ -1,0 +1,74 @@
+/* Fuentes */
+.bungee-regularspice- {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size:1.5vw;
+}
+
+header {
+    background-color: rgba(97, 3, 42);
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    transition: color 0.3s, text-decoration 0.3s;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: blue; /* Cambia el color al pasar el mouse */
+}
+
+/* Display del footer */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+  
+  /* Texto del footer */
+  .item {
+    width: 33.33%; /* Ancho para tres columnas */
+    font-size: 1.5vw;
+    padding: 5px;
+  }
+  
+  /* Estilo del texto del footer */
+  footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-top: auto;
+  }
+  /* Estilo para el texto de derechos de autor */
+  .copyright {
+    color: white;
+    border-top: 1px solid white;
+    margin-top: 20px;
+    font-size: 1.5vw;
+  }
+  
+  
