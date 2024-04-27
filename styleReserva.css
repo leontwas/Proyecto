@@ -106,7 +106,7 @@ margin-right: 10px;
     font-weight: 700;
   }  
 
-header {
+  header {
     background-color: rgba(97, 3, 42);
     text-align: center;
     width: 100%;
@@ -121,7 +121,7 @@ header h1 {
 
 nav ul {
     list-style-type: none;
-    margin-top: -5px;
+    margin-top: 5px;
 }
 
 nav ul li {
@@ -132,9 +132,15 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-size: 1.5vw;
+    transition: color 0.3s, text-decoration 0.3s;
     padding: 10px;
-    font-size: 1vw;
 }
+
+nav ul li a:hover {
+    color: blue; /* Cambia el color al pasar el mouse */
+}
+
 
 /* Display del footer */
 .container {

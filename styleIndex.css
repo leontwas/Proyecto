@@ -106,7 +106,7 @@ footer {
     /* Títulos del menú */
     .section {
         font-size:2vw;
-        padding: 15px 15px;
+        padding: 20px 20px;
         width: 20vW;
         min-width: 52vw;
         max-width:min-content;
@@ -161,7 +161,7 @@ footer {
 /* Texto del footer */
 .item {
 width: 30vW;
-font-size:2.5vw;
+font-size:2vw;
 padding: 5px;
 }
 
@@ -176,7 +176,7 @@ footer {
 
     .copyright {
         color: white;
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 }
 }
@@ -196,8 +196,8 @@ footer {
     } 
      /* Títulos del menú */   
     .section {
-        color: rgb(29, 26, 24);
-        font-size: 1.2vw; /* Cambiado de medium a un tamaño de fuente específico */
+        color: black;
+        font-size: 1.4vw; /* Cambiado de medium a un tamaño de fuente específico */
         padding: 10px 10px;
         width: 10vW;
         min-width: 65vw;
@@ -253,8 +253,7 @@ footer {
     color: #fff;
     text-align: center;
     width: 100%;
-    padding: 0cm;
-    margin-top: auto;
+    margin-top: 80px;
 
     .copyright {
         color: white;
@@ -277,16 +276,19 @@ footer {
   }  
 
   .bungee-regularspice- {
+    margin-bottom: 5px;
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style:normal;
-    font-size:xx-large;
+    font-size:1.5vw;
 }
 
 .chicle-regular {
     font-family: "Chicle", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 3vw;
+
   }
 
   header {
@@ -315,7 +317,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: large;
+    font-size: 1.5vw;
     transition: color 0.3s, text-decoration 0.3s;
     padding: 10px;
 }
