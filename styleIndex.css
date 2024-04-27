@@ -6,7 +6,7 @@ body, h1, h2, p, ul, li {
 @media only screen and (max-width: 650px) {
     body {
         /* Títulos del nav */
-        font-size: 4vW;
+        font-size: 5vW;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/burgerSmall.jpg);
         background-size: cover;
@@ -18,6 +18,14 @@ body, h1, h2, p, ul, li {
         overflow-x: hidden;
     }
     
+    /* Título Bienvenido a Gloriosa Burgers! */
+    .chicle-regular {
+        font-family: "Chicle", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4vw;
+      }
+
     /* Títulos del menú */
     .section {
         font-size: 2vw;
@@ -103,6 +111,14 @@ footer {
         overflow-x: hidden;
     }
     
+    /* Título Bienvenido a Gloriosa Burgers! */
+    .chicle-regular {
+        font-family: "Chicle", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.3vw;
+      }
+
     /* Títulos del menú */
     .section {
         font-size:2vw;
@@ -180,6 +196,7 @@ footer {
     }
 }
 }
+
 /* Notebooks */
 @media only screen and (min-width: 1001px)  {
     body {
@@ -193,7 +210,16 @@ footer {
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
-    } 
+    }
+
+    /* Título Bienvenido a Gloriosa Burgers! */
+.chicle-regular {
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vw;
+  }
+
      /* Títulos del menú */   
     .section {
         color: black;
@@ -260,6 +286,7 @@ footer {
         font-size: 1.5vw;
     }
 }
+
 }
 /* Fuentes */
   .kalam-regular {
@@ -280,17 +307,8 @@ footer {
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style:normal;
-    font-size:1.5vw;
+    font-size:2vw;
 }
-
-.chicle-regular {
-    font-family: "Chicle", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3vw;
-
-  }
-
   header {
     background-color: rgba(97, 3, 42);
     text-align: center;
