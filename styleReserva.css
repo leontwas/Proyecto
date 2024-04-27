@@ -6,17 +6,20 @@ body, h1, h2, p, ul, li, label, input, button {
 
 body {
     background-image: url(./assets/Imagenes/fondos/reserva.png);
-    font-size: x-large;
+    font-size: 1.5vw;
     color: gold;
 
     .reserva {
-        margin-left: 15px;
+        margin-left: 30px;
     }
-
+    
+/* Título Hacé tu reserva aquí... */
 .section1 {
     color: aqua;
-    font-size: xx-large;
-    padding-left: 20px;
+    font-size: 1.5vw;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .menores {
@@ -25,18 +28,18 @@ margin-right: 5px;
    }
 
 label, input[type="radio"], button, input[type="text"], input[type="email"], input[type="reset"], input[type="submit"] {
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 input[type="text"], input[type="email"] {
-    width: auto; /* Para que el ancho se ajuste automáticamente al contenido */
+    width: auto; 
 }
 
 input[type="radio"] {
-    transform: scale(1.5); /* Aumenta el tamaño del radio button */
+    transform: scale(1.5); 
 }
 
-.borrar {
+.restablecer {
     padding: 5px;
     border: inset;
     border-width: 1px 8px 1px 5px;
@@ -44,8 +47,9 @@ input[type="radio"] {
     border-radius: 30%;
     border-color: darkolivegreen;
     color: white;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 10px;
+    margin-top: 20px;
 }
 
 .enviar {
@@ -86,8 +90,9 @@ margin-right: 10px;
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style:normal;
-    font-size:xx-large;
+    font-size:1.5vw;
 }
+
 .kalam-regular {
     font-family: "Kalam", cursive;
     font-weight: 400;
@@ -99,10 +104,9 @@ margin-right: 10px;
   .kalam-bold {
     font-family: "Kalam", cursive;
     font-weight: 700;
-    font-style: normal;
   }  
 
-header {
+  header {
     background-color: rgba(97, 3, 42);
     text-align: center;
     width: 100%;
@@ -117,7 +121,7 @@ header h1 {
 
 nav ul {
     list-style-type: none;
-    margin-top: -5px;
+    margin-top: 5px;
 }
 
 nav ul li {
@@ -128,9 +132,15 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-size: 1.5vw;
+    transition: color 0.3s, text-decoration 0.3s;
     padding: 10px;
-    font-size: large;
 }
+
+nav ul li a:hover {
+    color: blue; /* Cambia el color al pasar el mouse */
+}
+
 
 /* Display del footer */
 .container {
@@ -143,8 +153,8 @@ nav ul li a {
 
 /* Texto del footer */
 .item {
-width: 25vW;
-font-size:small;
+width: 25vw;
+font-size:1.5vw;
 padding: 5px;
 color: white;
 }
@@ -155,10 +165,10 @@ footer {
     text-align: center;
     width: 100%;
     padding: 0cm;
-    margin-top: 50px;
+    margin-top: 220px;
 
     .copyright {
         color: white;
-        font-size:medium;
+        font-size:1.5vw;
     }
 }

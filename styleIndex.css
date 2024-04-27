@@ -6,10 +6,11 @@ body, h1, h2, p, ul, li {
 @media only screen and (max-width: 650px) {
     body {
         /* Títulos del nav */
+        font-size: 4vW;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-image: url(./assets/Imagenes/fondos/burguerSmall.jpg);
+        background-image: url(./assets/Imagenes/fondos/burgerSmall.jpg);
         background-size: cover;
-        color: gold;
+        color: black;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
@@ -19,13 +20,13 @@ body, h1, h2, p, ul, li {
     
     /* Títulos del menú */
     .section {
-        font-size:xx-small;
-        padding: 10px 10px;
+        font-size: 2vw;
+        padding: 15px 15px;
         width: 20vW;
-        min-width: 50vw;
+        min-width: 51vw;
         max-width:min-content;
         text-align: center;
-        color:gold;
+        color: white;
         margin-top: 10px;
         margin-left: 10px;
         margin-bottom: 5px;
@@ -41,7 +42,7 @@ body, h1, h2, p, ul, li {
     }
 /* Título Qué te gustaría? */
     .section2 {
-        font-size:large;
+        font-size:3vw;
         color:gold;
         padding: 10px 10px;
         width: 50vW;
@@ -49,15 +50,44 @@ body, h1, h2, p, ul, li {
         max-width:min-content;
         text-align: center;
         margin-top: -5px;
-        margin-left: -65px;
+        margin-left: -30px;
         margin-bottom: -15px;
     }
 
     .section:hover {
-        transform: scale(1.05);
-        color: white;
-        background-color:rgba(82, 125, 173);
+        transform: scale(1.05) translate(20px, 0px);
+        color: black;
+        background-color:rgb(82, 173, 123);
     }  
+/* Display del footer */
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Texto del footer */
+.item {
+width: 30vW;
+font-size:2.5vw;
+padding: 5px;
+}
+
+/* Estilo del texto del footer */
+footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0cm;
+    margin-top: auto;
+
+    .copyright {
+        color: white;
+        font-size: 2.5vw;
+    }
+}
 }
 /* Tablets */
 @media only screen and (min-width: 651px) and (max-width: 1000px)  {
@@ -66,7 +96,6 @@ body, h1, h2, p, ul, li {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/burgerMedium.jpg);
         background-size: cover;
-        color: gold;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
@@ -76,8 +105,8 @@ body, h1, h2, p, ul, li {
     
     /* Títulos del menú */
     .section {
-        font-size:small;
-        padding: 10px 10px;
+        font-size:2vw;
+        padding: 20px 20px;
         width: 20vW;
         min-width: 52vw;
         max-width:min-content;
@@ -98,28 +127,58 @@ body, h1, h2, p, ul, li {
     }
 /* Título Qué te gustaría? */
     .section2 {
-        font-size:x-large;
+        font-size:3.5vw;
         font-weight: bold;
-        color:black;
+        color:darkred;
         padding: 10px 10px;
         width: 50vW;
         min-width: 65vw;
         max-width:min-content;
         text-align: center;
         margin-top: -5px;
-        margin-left: -90px;
+        margin-left: -50px;
         margin-bottom: -15px;
     }
 
+    /* Título Bienvenidos a Gloriosa Burgers! */
     .chicle-regular {
         color:black;
-        font-size: x-large;
+        font-size: 4vw;
     }
     .section:hover {
-        transform: scale(1.05);
+        transform: scale(1.05) translate(20px, 0px);
         color: white;
         background-color: rgba(132, 4, 136); 
-    }  
+    } 
+    /* Display del footer */
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Texto del footer */
+.item {
+width: 30vW;
+font-size:2vw;
+padding: 5px;
+}
+
+/* Estilo del texto del footer */
+footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0cm;
+    margin-top: auto;
+
+    .copyright {
+        color: white;
+        font-size: 2vw;
+    }
+}
 }
 /* Notebooks */
 @media only screen and (min-width: 1001px)  {
@@ -137,7 +196,8 @@ body, h1, h2, p, ul, li {
     } 
      /* Títulos del menú */   
     .section {
-        font-size:medium;
+        color: black;
+        font-size: 1.4vw; /* Cambiado de medium a un tamaño de fuente específico */
         padding: 10px 10px;
         width: 10vW;
         min-width: 65vw;
@@ -146,7 +206,7 @@ body, h1, h2, p, ul, li {
         margin-top: 10px;
         margin-left: 10px;
         margin-bottom: 5px;
-        background-color: rgba(58, 52, 58, 0.4);
+        background-color: rgba(40, 63, 43, 0.4);
         border-radius: 40%;
         border-bottom-style:dotted;
         transition: transform 0.5s ease-in-out;
@@ -155,11 +215,12 @@ body, h1, h2, p, ul, li {
         margin-top: -30px;
         margin-left: 10px;
         text-align: center;
-        font-size:x-large;
+        font-size: 2.5vw; 
     }
     /* Título Qué te gustaría? */
     .section2 {
-        font-size:xx-large;
+        color: rgb(15, 7, 100);
+        font-size: 2.3vw; 
         width: 50vW;
         min-width: 65vw;
         max-width:min-content;
@@ -167,19 +228,39 @@ body, h1, h2, p, ul, li {
     }
 
     .section:hover {
-        transform: scale(1.05);
+        transform: scale(1.05) translate(30px, 0px);
         color: white;
-        background-color: rgba(132, 4, 136); 
+        background-color: rgb(44, 9, 240); 
     }  
-    .kalam-regular {
-        color:rgb(248, 252, 6);
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        border-radius: 10%;
-    }
+/* Display del footer */
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
+/* Texto del footer */
+.item {
+width: 30vW;
+font-size:1.5vw;
+padding: 5px;
+}
+
+/* Estilo del texto del footer */
+footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+
+    .copyright {
+        color: white;
+        font-size: 1.5vw;
+    }
+}
+}
 /* Fuentes */
   .kalam-regular {
     font-family: "Kalam", cursive;
@@ -195,19 +276,22 @@ body, h1, h2, p, ul, li {
   }  
 
   .bungee-regularspice- {
+    margin-bottom: 5px;
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style:normal;
-    font-size:xx-large;
+    font-size:1.5vw;
 }
 
 .chicle-regular {
     font-family: "Chicle", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 3vw;
+
   }
 
-header {
+  header {
     background-color: rgba(97, 3, 42);
     text-align: center;
     width: 100%;
@@ -219,23 +303,6 @@ header {
 header h1 {
     color: white;
 }
-
-/* nav ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-    font-size: large;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}*/
 
 nav ul {
     list-style-type: none;
@@ -250,7 +317,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: large;
+    font-size: 1.5vw;
     transition: color 0.3s, text-decoration 0.3s;
     padding: 10px;
 }
@@ -259,31 +326,4 @@ nav ul li a:hover {
     color: blue; /* Cambia el color al pasar el mouse */
 }
 
-/* Display del footer */
-.container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
 
-/* Texto del footer */
-.item {
-width: 30vW;
-font-size:smaller;
-padding: 5px;
-}
-
-/* Estilo del texto del footer */
-footer {
-    background-color: #0f0f0f;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    padding: 0cm;
-    margin-top: auto;
-
-    .copyright {
-        color: white;
-    }
-}
