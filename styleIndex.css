@@ -344,4 +344,23 @@ nav ul li a:hover {
     color: blue; /* Cambia el color al pasar el mouse */
 }
 
+/* Favicon de Facebook */
+.fa-facebook-square {
+    font-size: 2vw; 
+    color: white;
+  }
+
+  .fa-facebook-square:hover {
+    color: blue;
+  }
+
+/* Favicon de Instagram */
+.fa-instagram{
+    font-size: 2vw; 
+    color: white;
+}
+
+.fa-instagram:hover {
+    color: blue;
+  }
 
