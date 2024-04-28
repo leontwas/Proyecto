@@ -267,7 +267,6 @@ body, h1, h2, p, ul, li {
   .owl-carousel .owl-video-frame {
     position: relative;
     z-index: 1;
-
   } 
 
   header {
@@ -299,6 +298,7 @@ body, h1, h2, p, ul, li {
     transition: color 0.3s, text-decoration 0.3s;
     padding: 10px;
     margin-bottom: 10px;
+    font-style:oblique;
   }
   
   nav ul li a:hover {

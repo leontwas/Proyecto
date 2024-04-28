@@ -3,39 +3,79 @@
     padding: 0;
 }
 
+/* HEADER */
 
+header {
+  background-color: rgba(97, 3, 42);
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+  transition: color 0.3s, text-decoration 0.3s;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+nav ul li a:hover {
+  color: blue; /* Cambia el color al pasar el mouse */
+  text-decoration: none;
+}
+
+/* ICONOS */
+
+/* Favicon de Facebook */
+.fa-facebook-square {
+  font-size: 2vw;
+  color: white; 
+}
+
+.fa-facebook-square:hover {
+  color: blue;
+}
+
+/* Favicon de Instagram */
+.fa-instagram{
+  font-size: 2vw; 
+  color: white;
+}
+
+.fa-instagram:hover {
+  color: blue;
+}
     
-    /* Títulos del menú */
-    .section {
-        font-size:xx-small;
-        padding: 10px 10px;
-        width: 20vW;
-        min-width: 50vw;
-        max-width:min-content;
-        text-align: center;
-        color:gold;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-        background-color: rgba(82, 125, 173, 0.4);
-        border-radius: 40%;
-        border-bottom-style:dotted;
-        transition: transform 0.5s ease-in-out;
-    }
- 
  /* Background pattern */
- html {
+ body {
     --s: 150px; /* control the size */
     
     background:
       linear-gradient(135deg,#0000 18.75%,#5E412F 0 31.25%,#0000 0),
       repeating-linear-gradient(45deg,#5E412F -6.25% 6.25%,#FCEBB6 0 18.75%);
-    background-size: var(--s) var(--s); 
-    font-family: "Kalam", cursive;
+      background-size: var(--s) var(--s); 
+      font-family: "Kalam", cursive;
   }
 
-
-/* CONTAINER */
+/* CONTENEDOR */
 
 .contenedor {
     width: 90%;
@@ -43,18 +83,14 @@
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    /* grid-template-columns: repeat(4, 1fr) 3%; */
     grid-template-columns: repeat(5, 1fr);
 }
 
-
-.contenedor>.header, .contenedor>.content, .contenedor>.sidebar, .contenedor>div {
+ .contenedor>.content, .contenedor>.sidebar, .contenedor>div {
     background: #fff;
     padding: 20px;
     border: 1px solid #000000;
 }
-
-
 
 .contenedor>.content {
     grid-column: span 3;
@@ -68,8 +104,7 @@
     color: #dfe6e9
 }
 
-.content .article h1,
-.content .article p {
+.content>.article h1, .content>.article p {
     padding: 10px;
 }
 
@@ -83,7 +118,7 @@
     justify-content: center;
 }
 
-.contenedor .sidebar img {
+.contenedor>.sidebar img {
     display: block;
     width: 100%;
     margin-top: 5px;
@@ -112,22 +147,20 @@
     .header {
         text-align: center;
     }
-    .contenedor .content {
+    .contenedor>.content {
         grid-column: 1 / -1;
     }
-    .contenedor .sidebar {
+    .contenedor>.sidebar {
         grid-column: 1 / 6;
     }
 
-    .contenedor .related-post {
+    .contenedor>.related-post {
         grid-column: 1/-1;
     }
 }
-    
-
-
 
 /* Fuentes */
+
   .kalam-regular {
     font-family: "Kalam", cursive;
     font-weight: 400;
@@ -145,6 +178,7 @@
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 2vw;
 }
 
 .chicle-regular {
@@ -153,38 +187,9 @@
     font-style: normal;
   }
 
-header {
-    background-color: rgba(97, 3, 42);
-    text-align: center;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
 
+/* FOOTER */
 
-header h1 {
-    color: white;
-}
-
-nav ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-}
-
-/* Display del footer */
 .container {
     color: white;
     display: inline-flex;
@@ -196,9 +201,10 @@ nav ul li a {
 /* Texto del footer */
 .item {
 width: 30vW;
-font-size:smaller;
+font-size:1.5vw;
 padding: 5px;
 color: white;
+font-style: normal;
 }
 
 /* Estilo del texto del footer */
