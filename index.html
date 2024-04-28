@@ -34,22 +34,41 @@
     <section id="consulta" class="section2">
     <p class="kalam-bold">Qué te gustaría hacer?</p>
     </section>
-    <div class="pedido">
-    <section id="reserva" class="section">
-        <h2>Reservar una mesa en nuestro local</h2>
-        <p>¡Reúnete con amigos y/o familiares!</p>
-    </section>
 
-    <section id="retirar" class="section">
-        <h2>Venir en persona a retirar tu pedido</h2>
-        <p>¡Disfruta de nuestro servicio Take Away!</p>
-    </section>
+<div class="opciones">
+    <form action="./reservas.html" method="get" name="formularioContacto"> <!-- En action me falta la ruta a donde quiero que se envíe mi formulario -->
+        <button class="reservar" type="submit"> 
+            <label for="reservar">
+                <section id="reservar" class="section">
+                     <h2>Reservar una mesa en nuestro local</h2>
+                     <p>¡Reúnete con amigos y/o familiares!</p>
+                </section>
+            </label>
+        </button>
+    </form>
+            
+    <form action="./productos.html" method="get" name="formularioPedido">
+        <button class="retirar" type="submit"> 
+            <label for="retirar">
+                <section id="retirar" class="section">
+                    <h2>Venir en persona a retirar tu pedido</h2>
+                    <p>¡Disfruta de nuestro servicio Take Away!</p>
+                </section>
+            </label>
+        </button>
+    </form>
 
-    <section id="contacto" class="section">
-        <h2>Hacer un pedido a domicilio</h2>
-        <p>¡Te llevamos el pedido hasta tu casa!</p>
-    </section>
-    </div>
+    <form action="./productos.html" method="get" name="formularioEnvio">
+        <button class="enviar" type="submit"> 
+            <label for="enviar">
+                <section id="enviar" class="section">
+                    <h2>Hacer un pedido a domicilio</h2>
+                    <p>¡Te llevamos el pedido hasta tu casa!</p>
+                </section>
+            </label>
+        </button>
+    </form>
+</div>
     <footer>
         <div class="container">
                 <div class="item item-1">Preguntas frecuentes</div>
