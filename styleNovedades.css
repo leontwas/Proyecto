@@ -15,12 +15,25 @@
   font-weight: 400;
   font-style: normal;
   margin-left: 20px;
+  font-size: 2vW;
 }
 .kalam-bold {
   font-family: "Kalam", cursive;
   font-weight: 700;
   font-style: normal;
+  font-size: 3vW;
+  color: white;
 }  
+
+.sedgwick-ave-display-regular {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:yellow;
+  font-size: 4vw;
+  position: relative;
+
+}
 
 /* Favicon de Facebook */
 .fa-facebook-square {
@@ -254,7 +267,8 @@
   .owl-carousel .owl-video-frame {
     position: relative;
     z-index: 1;
-  }
+
+  } 
 
   header {
     background-color: rgba(97, 3, 42);
