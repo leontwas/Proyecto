@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <script src="./assets/js/bootstrap.js"></script> <!-- Cargo JavaScript-->
     <title>Reserva</title>
 </head>
 <body>
@@ -27,9 +28,8 @@
     <section id="seccionReserva" class="section1">
         <p class="kalam-bold">Hacé tu reserva aquí...</p>
     </section>
-
     <div class="reserva">
-        <form action="#" method="get" name="formularioContacto">
+        <form action="#" method="get" name="formularioContacto"> <!-- En action me falta la ruta a donde quiero que se envíe mi formulario -->
             <label for="nombre"><b>Nombre:</b></label>
             <input type="text" name="nombre" id="nombre" required > 
             <br><br>
@@ -41,6 +41,9 @@
             <br><br>
             <label for="email"><b>Correo electrónico:</b></label>
             <input type="email" name="email" id="email" required> 
+            <br><br>
+            <label for="fecha"><b>Elija la fecha:</b></label>
+            <input type="date" name="fecha" id="fecha" required>
             <br><br>
             <label for="cantPers"><b>Cantidad de personas:</b></label>
             <select name="cantPers" id="cantPers" required>
@@ -72,11 +75,8 @@
             <input class="restablecer" type="reset"></button> 
             <button class="cancelacion">Cancelación</button>
             <input class="enviar" type="submit"></button>
-            <button class="salir">Salir</button>
         </form>
     </div>
-    <script src="./assets/js/bootstrap.js"></script> <!-- Cargo JavaScript-->
-
     <footer>
         <div class="container">
             <div class="item item-1">Preguntas frecuentes</div>
@@ -94,3 +94,5 @@
     </footer>
 </body>
 </html>
+
+
