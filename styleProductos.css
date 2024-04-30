@@ -6,6 +6,19 @@
     font-size:2vw;
 }
 
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: italic;
+}  
+
 header {
   background-color: rgba(97, 3, 42);
   text-align: center;
@@ -62,35 +75,53 @@ nav ul li a:hover {
   color: blue;
 }
 
-/* Display del footer */
+  /************************************************ Footer *********************************************************/
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0px;
+  width: 100%; /* Cambiado a 100% para ocupar todo el ancho de la pantalla */
+  margin-top: auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #0f0f0f;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5vw;
+  padding: 20px;
+}
+
+footer {
+ background-color: #0f0f0f;
+}
+
+.copyright {
+  width: 100%; 
+  color: white;
+  text-align: center;
+  font-style: italic;
+  background-color: #0f0f0f;
+  border-top: 2px solid white;
+  padding: 10px 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    font-size: 2.5vw;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
   }
-  
-  /* Texto del footer */
-  .item {
-    width: 33.33%; /* Ancho para tres columnas */
-    font-size: 1.5vw;
-    padding: 5px;
-  }
-  
-  /* Estilo del texto del footer */
-  footer {
-    background-color: #0f0f0f;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    padding: 0;
-    margin-top: auto;
-  }
-  /* Estilo para el texto de derechos de autor */
+
   .copyright {
-    color: white;
-    border-top: 1px solid white;
-    margin-top: 20px;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
-  
-  
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+  .container {
+    font-size: 2vw;
+  }
+
+  .copyright {
+    font-size: 2vw;
+  }
+}
