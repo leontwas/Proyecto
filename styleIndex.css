@@ -59,7 +59,7 @@ body, h1, h2, p, ul, li {
     .fa-instagram:hover {
         color: blue;
       }
-    
+
     body {
         /* Títulos del nav */
         font-size: 5vW;
@@ -132,36 +132,8 @@ body, h1, h2, p, ul, li {
         background-color:rgb(82, 173, 123);
         border-bottom-style:dotted;
     }  
-    /* Display del footer */
-    .container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
 
-/* Texto del footer */
-.item {
-width: 30vW;
-font-size:2.5vw;
-padding: 5px;
-}
-
-/* Estilo del texto del footer */
-footer {
-    background-color: #0f0f0f;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    padding: 0cm;
-    margin-top: auto;
-
-    .copyright {
-        color: white;
-        font-size: 2.5vw;
-    }
-}
-}
 /************************************************ Tablets *********************************************************/
 @media only screen and (min-width: 651px) and (max-width: 1000px)  {
     header {
@@ -297,35 +269,6 @@ footer {
         background-color: rgb(54, 173, 163); 
         border-bottom-style:dotted;
     } 
-    /* Display del footer */
-.container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-/* Texto del footer */
-.item {
-width: 30vW;
-font-size:2vw;
-padding: 5px;
-}
-
-/* Estilo del texto del footer */
-footer {
-    background-color: #0f0f0f;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    padding: 0cm;
-    margin-top: auto;
-
-    .copyright {
-        color: white;
-        font-size: 2vw;
-    }
-}
 }
 
 /************************************************** Notebooks ****************************************************/
@@ -454,34 +397,6 @@ footer {
         background-color: rgb(15, 116, 65); 
         border-bottom-style:dotted;
     }  
-/* Display del footer */
-.container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-/* Texto del footer */
-.item {
-width: 30vW;
-font-size:1.5vw;
-padding: 5px;
-}
-
-/* Estilo del texto del footer */
-footer {
-    background-color: #0f0f0f;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    margin-top: 80px;
-
-    .copyright {
-        color: white;
-        font-size: 1.5vw;
-    }
-}
 
 }
 /* Fuentes */
@@ -506,3 +421,58 @@ footer {
     font-size:2vw;
 }
  
+/************************************************ Footer *********************************************************/
+.container {
+    width: 100%;
+    margin-top: auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #0f0f0f;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5vw; /* Ajustado el tamaño de letra */
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #0f0f0f;
+    font-size: 1.5vw;
+  }
+  
+  .copyright {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    background-color: #0f0f0f;
+    border-top: 2px solid white;
+    padding: 10px 0;
+    font-size: 1.2vw; /* Igualado el tamaño de letra */
+  }
+  
+  /* Celulares */
+  @media only screen and (max-width: 650px) {
+    .container {
+      font-size: 2.5vw;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1em;
+    }
+  
+    .copyright {
+      font-size: 1.5vw;
+    }
+  }
+  
+  /* Tablets */
+  @media only screen and (min-width: 651px) and (max-width: 1000px) {
+    .container {
+      font-size: 2vw;
+    }
+  
+    .copyright {
+      font-size: 1.5vw;
+    }
+  }
+  

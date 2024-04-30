@@ -3,8 +3,36 @@
     padding: 0;
 }
 
-/* HEADER */
+/* Fuentes */
 
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}  
+
+.bungee-regularspice- {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+}
+
+.chicle-regular {
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*********************************************** HEADER *******************************************************/
 header {
   background-color: rgba(97, 3, 42);
   text-align: center;
@@ -38,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: blue; /* Cambia el color al pasar el mouse */
+  color: blue; 
   text-decoration: none;
 }
 
@@ -159,63 +187,58 @@ nav ul li a:hover {
     }
 }
 
-/* Fuentes */
-
-  .kalam-regular {
-    font-family: "Kalam", cursive;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 20px;
-  }
-
-  .kalam-bold {
-    font-family: "Kalam", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }  
-
-.bungee-regularspice- {
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2vw;
-}
-
-.chicle-regular {
-    font-family: "Chicle", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-
-/* FOOTER */
-
+/************************************************ Footer *********************************************************/
 .container {
-    color: white;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-top: auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #0f0f0f;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5vw; /* Ajustado el tamaño de letra */
+  padding: 20px;
 }
 
-/* Texto del footer */
-.item {
-width: 30vW;
-font-size:1.5vw;
-padding: 5px;
-color: white;
-font-style: normal;
-}
-
-/* Estilo del texto del footer */
 footer {
-    background-color: #0f0f0f;
-    text-align: center;
-    width: 100%;
-    padding: 0cm;
-    margin-top: auto;
-
-    .copyright {
-        color: white;
-    }
+  background-color: #0f0f0f;
+  font-size: 1.5vw;
 }
+
+.copyright {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  background-color: #0f0f0f;
+  border-top: 2px solid white;
+  padding: 10px 0;
+  font-size: 1.2vw; /* Igualado el tamaño de letra */
+}
+
+/* Celulares */
+@media only screen and (max-width: 650px) {
+  .container {
+    font-size: 2.5vw;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+
+  .copyright {
+    font-size: 1.5vw;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+  .container {
+    font-size: 2vw;
+  }
+
+  .copyright {
+    font-size: 1.5vw;
+  }
+}
+
